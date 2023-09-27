@@ -1,0 +1,238 @@
+html,body{padding:0;
+          margin:0 auto;
+          width:300px;
+          height:900px;
+          font-family: "Trirong", serif;
+          font-size:15px;}
+
+*{box-sizing: border-box;}
+
+.linha{display:flex;
+       justify-content:space-evenly;
+       align-items: center;
+       flex-flow: row wrap;
+       width:100%;
+       height:100%;}
+
+.titulo{width:90%;
+        height:20%;} 
+
+.ancora{width:35%;
+        height:5%;}        
+
+.produto{width:40%;
+         height: fit-content;}     
+                
+.auxPrecoProduto,
+.nomeProduto,
+.imagemProduto{width: 100%;
+               display:flex;
+               align-items: center;
+               justify-content: center;
+               font-size: 12px}
+.cifraoPrecoProduto,
+.precoProduto{width:fit-content;}       
+
+
+
+.ancoraCadastro{border:2px solid rgba(0, 0, 0, 0.7);
+                border-radius: 25px 0px 0px 25px;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);}
+
+.ancoraProdutos{border:2px solid rgba(0, 0, 0, 0.7);
+                border-radius: 0px 25px 25px 0px;;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);}
+
+.produto{border:2px solid rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;}
+
+.titulo{border:2px solid rgba(0, 0, 0, 0.7);
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.7);}
+
+
+
+.FundoModal{position:fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background:rgba(0, 0, 0, 0.5);
+            display:none;
+            transition:0.5s;
+            justify-content:center;
+            align-items:center;
+            overflow-y:auto;}
+
+.modal{width:95%;
+       height:40%;
+       background:white;
+       display:none;
+       position:relative;
+       display:flex;
+       align-items: center;
+       transition:0.5s;
+       justify-content: center;
+       border:2px solid rgba(0, 0, 0, 0.4);
+       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+       border-radius: 20px ;}
+       
+.fecharModal{position:absolute;
+             top:-5%;
+             right:2%;
+             font-size: 20px;}
+           
+.imagemModal,
+.descricaoProduto{display:inline-block;
+                  align-items:center;
+                  margin:2px;
+                  width:49%;
+                  height:99%;}
+
+.imagemModal{width:49%;
+             height:70%;
+             border:1px solid rgba(0, 0, 0, 0.4);
+             border-radius: 20px;
+             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);}                  
+                              
+.nomeProdutoModal,
+.precoProdutoModal,
+.subtotalModal,
+.aux2modal,
+.escolhaQuantidadeModal{width:100%;
+                        text-align: center;
+                        margin:1px;}
+                                
+.precoProdutoModal,
+.aux1modal,
+.subtotalModal{width:fit-content;
+               display:inline-block;}    
+
+.precoProdutoModal,
+.subtotalModal{width:fit-content;}          
+        
+.aux1modal{text-align: end;
+           width:fit-content;
+           font-size: 10px;}        
+
+.escolhaQuantidadeModal,
+.escolhaQuantidadePedido{display:flex;
+                        justify-content:space-evenly;
+                        align-items:center;}     
+                        
+.escolhaQuantidadeModal{justify-content:center;}   
+
+.btnMaisModal,
+.btnMenosModal,
+.btnMenosPedido,
+.btnMaisPedido{text-decoration:none;
+               border:none;
+               font-size:28px;
+               font-weight:900;
+               color:red;
+               background:rgba(255, 255, 255, 0.9);
+               padding:0;
+               text-shadow:2px 2px 2px rgba(0, 0, 0, 0.5);}    
+               
+.quantidadeModal{font-size:19px;
+                 background: rgba(255, 0, 0, 0.6);
+                 color:white;
+                 text-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.8);
+                 width:30px;
+                 text-align: center;
+                 border-bottom: 2px solid rgba(184, 92, 34, 0.4);
+                 border-top: 2px solid rgba(184, 92, 34, 0.4);}               
+
+.addCarrinhoModal{text-decoration:none;
+                  border:none;
+                  background: none;
+                  color:rgba(0, 0, 0, 0.7);
+                  margin:5px;
+                  border:2px solid rgba(0, 0, 0, 0.7);
+                  padding: 5px;
+                  font-size: 20px;
+                  border-radius:10px;
+                  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.7);}               
+
+
+.btnMaisPedido,
+.btnMaisModal{border-left: 2px solid rgba(184, 92, 34, 0.4);
+              border-right: 2px solid rgba(184, 92, 34, 0.4);
+              border-bottom-right-radius: 50%;
+              border-top-right-radius: 50%;
+              border-bottom: 2px solid rgba(184, 92, 34, 0.4);
+              border-top: 2px solid rgba(184, 92, 34, 0.4);}
+
+.btnMenosPedido,
+.btnMenosModal{border-left: 2px solid rgba(184, 92, 34, 0.4);
+                border-right: 2px solid rgba(184, 92, 34, 0.4);
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+                border-bottom: 2px solid rgba(184, 92, 34, 0.4);
+                border-top: 2px solid rgba(184, 92, 34, 0.4);
+                padding: 0 4px;}                             
+                    
+.FundoCarrinho{position:fixed;
+               top:0;
+               bottom:0;
+               right:0;
+               width:0;
+               transition:0.5s;
+               height:100%;
+               overflow: hidden;
+               background:rgba(255, 255, 255, 0.9);
+               border:1px solid rgba(0, 0, 0, 0.2);
+               border-radius: 55px 0 5px 55px;
+               box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.2);}  
+.fecharCarrinho{position:absolute;
+                top:0;
+                right:3%;
+                font-size:20px;} 
+.modeloPedido{display: flex;
+              align-items: center;
+              justify-content:space-between;
+              flex-flow: row wrap;
+              width:95%;
+              margin:5px 0;}
+              
+.borda{display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        width:50%;}
+
+.acopla{display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;}
+
+.cifrao,
+.sub{font-size:12px;
+     font-weight: 900;}
+
+.subtotalPedido{font-size:12px;
+                font-weight: 900;}
+
+.quantidadePedido{font-size: 20px;
+                 color:white;
+                 width: 35px;
+                 text-align: center;
+                 border-bottom: 1px solid rgba(184, 92, 34, 0.4);
+                 border-top: 1px solid rgba(184, 92, 34, 0.4);
+                 background: rgba(255, 0, 0, 0.6);;}     
+        
+    
+
+.totalAcopla{text-align: center;
+            margin:5px;
+            font-size: 20px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);}    
+        
+.imagemPedido{border-radius: 10px;
+              box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+              border:1px solid rgba(0, 0, 0, 0.5);}        

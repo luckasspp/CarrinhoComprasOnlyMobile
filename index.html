@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/script.js" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="linha">
+        <img src="img/LOGO.JPG" class="titulo">
+        <img src="img/CADASTRO.JPG" class="ancoraCadastro">
+        <img src="img/PRODUTOS.JPG" class="ancoraProdutos">
+
+        <div class="produto">
+            <div class="nomeProduto"></div>
+            <img class="imagemProduto">
+            <div class="auxPrecoProduto">
+                <div class="cifraoPrecoProduto">R$</div>
+                <div class="precoProduto"></div>
+            </div>
+        </div>
+
+        <div class="FundoModal">
+            <div class="modal">
+                <span class="fecharModal">x</span>
+                <img class="imagemModal">
+                <div class="descricaoProduto">
+                    <div class="nomeProdutoModal">nome produto</div>
+                    <div class="aux2modal">
+                        <div class="aux1modal">unidade R$</div>
+                        <div class="precoProdutoModal">preco produto</div>
+                    </div>
+                    <div class="aux2modal">
+                        <div class="aux1modal">subtotal R$</div>
+                        <div class="subtotalModal">subtotal produto</div>
+                    </div>
+                    <div class="escolhaQuantidadeModal">
+                        <button class="btnMenosModal">-</button>
+                        <span class="quantidadeModal">1</span>
+                        <button class="btnMaisModal">+</button>
+                    </div>
+                    <div class="aux2modal">
+                        <button class="addCarrinhoModal">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="FundoCarrinho">
+            <span class="fecharCarrinho">x</span>
+            <div class="modeloPedido">
+
+                <div class="borda">
+                    <div class="acopla">
+                        <img class="imagemPedido" width="70" height="50">
+                    </div>
+                    <div class="acopla">
+                        <span class="sub">subtotal R$</span>
+                        <span class="subtotalPedido">0</span>
+                    </div>
+                </div>
+                <div class="borda">
+                    <button class="btnMenosPedido">-</button>
+                    <span class="quantidadePedido">1</span>
+                    <button class="btnMaisPedido">+</button>
+                </div>
+            </div>
+            <div class="totalAcopla">
+                <span class="total">Total</span>
+                <span class="cifrao">R$</span>
+                <span class="totalPedido"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
